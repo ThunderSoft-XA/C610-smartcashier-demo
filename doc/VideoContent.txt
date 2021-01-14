@@ -1,0 +1,2 @@
+1. To demonstrate the practical application scenario and user process of Tubox C610
+2. Start the app according to the user manual
