@@ -1,19 +1,37 @@
-## Qualcomm TurboX C610 Open Kit SmartCashierApp Developer documentation
+# Qualcomm TurboX C610 Open Kit SmartCashierApp Developer documentation
 
-#brief introduction
-#This document mainly introduces the deployment and use of SmartCashierApp environment。
+## brief introduction
 
-#Environment configuration
-#usage method
+This document mainly introduces the deployment and use of SmartCashierApp environment.Mainly contents as follow:
+
+* Background
+* Environment configuration
+* Install && Usage
+
+## Background
+
+Following the development of Embedded Machine,traditional Embedded Machine is difficult that coming intelligence behavior.So we need a new tool (e.g.SNPE) that we can built a AI application in target machine easily.And,The trend of intelligence is more and more obvious.At the same time,Qualcomm have a serial of tools and plugins(e.g.qtimmfsrc).So,We have the idea of SmartCashier run in the Qualcomm TurboX C610.
+
+## Environment configuration
+
+Requirements:
+
+* [SNPE Setup]("https://developer.qualcomm.com/docs/snpe/setup.html")
+* [Opencv 3.4.3]()
+* [GStreamer Plugins]("https://developer.qualcomm.com/qualcomm-robotics-rb5-kit/software-reference-manual/application-semantics/gstreamer-plugins")
+* [Yocto build tool]("https://www.yoctoproject.org/")
+
+## Install && Usage
 
 1. Installing the ADB tool
-2. c.Configure the compilation environment according to the release note document
-3. d.Write BB file, compile the executable file of samrtcashierapp into the system image, and burn the system according to the realease note document
-4. Start the SmartCashierApp according to the 《Turbox-C610-SmartCashierApp_User Guide》document
+2. Write .bb file, compile the executable file of samrtcashierapp
+3. push full package to C610,enter SmartCashier directory,run Install.sh
+4. start the SmartCashier according to the 《Turbox-C610-SmartCashierApp_UserGuide》document
 
-#For exsample of BB complie file
+### For exsample of BB complie file
+
 LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/${LICENSE};md5=3775480a712fc46a69647678acb234cb"
+LIC_FILES_CHKSUM = "file://{COMMON_LICENSE_DIR}/{LICENSE};md5=3775480a712fc46a69647678acb234cb"
 
 inherit cmake
 
@@ -38,14 +56,14 @@ SRC_URI = "file://video_ai/SmartCashier/"
 
 #PN = 'smartcashier'
 #PV = '1'
-#/home/turbox/wuqx0806/cs-610/apps_proc/src/video_ai
-#FILESPATH =+ "${WORKSPACE}/video_ai/:"
-FILESPATH =+ "/home/turbox/wuqx0806/cs-610/apps_proc/src/video_ai/:"
+#/home/username/dirpath/cs-610/apps_proc/src/video_ai
+#FILESPATH =+ "{WORKSPACE}/video_ai/:"
+FILESPATH =+ "/home/username/dirpath/cs-610/apps_proc/src/video_ai/:"
 SRCREV = "${AUTOREV}"
 
 #S = "${FILESPATH}/build"
-#S = "/home/turbox/wuqx0806/cs-610/apps_proc/src/video_ai/build"
-S = "/home/turbox/wuqx0806/cs-610/apps_proc/src/video_ai/SmartCashier/"
+#S = "/home/username/dirpath/cs-610/apps_proc/src/video_ai/build"
+S = "/home/username/dirpath/cs-610/apps_proc/src/video_ai/SmartCashier/"
 
 SOLIBS = ".so*"
 FILES_SOLIBSDEV = ""
@@ -56,21 +74,7 @@ INHIBIT_PACKAGE_STRIP = "1"
 
 do_compile[noexec] = "1"
 
-INSANE_SKIP_${PN}-dev += "dev-elf dev-deps"
+FILES_{PN} += "${bindir}/*"
 
-do_install () {
-    echo "--- examples doing install ---"
-    echo ${D}
-    echo ${bindir}
-    echo ${D}${bindir}
-    echo ${WORK_DIR}
-    echo "--- examples before ---"
-    echo "--- examples end ---"
-    install -d ${D}${libdir}/
-    install -d ${D}${bindir}
-    install -m 0755 ${S}/bin/smartcashier ${D}${bindir}
-}
-
-FILES_${PN} += "${bindir}/*"
-FILES_${PN} += "${libdir}/*"
+FILES_{PN} += "${libdir}/*"
 PARALLEL_MAKEINST = ""
