@@ -1,4 +1,4 @@
-# Qualcomm TurboX C610 Open Kit SmartCashierApp Developer documentation
+# Qualcomm® QCS610 SoC Open Kit SmartCashierApp Developer documentation
 
 ## brief introduction
 
@@ -10,13 +10,13 @@ This document mainly introduces the deployment and use of SmartCashierApp enviro
 
 ## Background
 
-Following the development of Embedded Machine,traditional Embedded Machine is difficult that coming intelligence behavior.So we need a new tool (e.g.SNPE) that we can built a AI application in target machine easily.And,The trend of intelligence is more and more obvious.At the same time,Qualcomm have a serial of tools and plugins(e.g.qtimmfsrc).So,We have the idea of SmartCashier run in the Qualcomm TurboX C610.
+Following the development of Embedded Machine,traditional Embedded Machine is difficult that coming intelligence behavior.So we need a new tool (e.g.Qualcomm Neural processing SDK for AI) that we can built a AI application in target machine easily.And,The trend of intelligence is more and more obvious.At the same time,Qualcomm have a serial of tools and plugins(e.g.qtimmfsrc).So,We have the idea of SmartCashier run in the Qualcomm® QCS610 SoC.
 
 ## Environment configuration
 
 Requirements:
 
-* [SNPE Setup]("https://developer.qualcomm.com/docs/snpe/setup.html")
+* [Qualcomm Neural processing SDK for AI Setup]("https://developer.qualcomm.com/docs/snpe/setup.html")
 * [Opencv 3.4.3]()
 * [GStreamer Plugins]("https://developer.qualcomm.com/qualcomm-robotics-rb5-kit/software-reference-manual/application-semantics/gstreamer-plugins")
 * [Yocto build tool]("https://www.yoctoproject.org/")
@@ -25,8 +25,8 @@ Requirements:
 
 1. Installing the ADB tool
 2. Write .bb file, compile the executable file of samrtcashierapp
-3. push full package to C610,enter SmartCashier directory,run Install.sh
-4. start the SmartCashier according to the 《Turbox-C610-SmartCashierApp_UserGuide》document
+3. push full package to "Qualcomm® QCS610 SoC",enter SmartCashier directory,run Install.sh
+4. start the SmartCashier according to the 《Qualcomm® QCS610 SoC-SmartCashierApp_UserGuide》document
 
 ### For exsample of BB complie file
 
