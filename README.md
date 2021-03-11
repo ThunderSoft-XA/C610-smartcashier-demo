@@ -1,4 +1,4 @@
-#  Open Kit SmartCashierApp Developer documentation
+# Open Kit SmartCashierApp Developer documentation
 
 ## brief introduction
 
@@ -22,7 +22,6 @@ Requirements:
 * [GStreamer Plugins]("https://developer.qualcomm.com/qualcomm-robotics-rb5-kit/software-reference-manual/application-semantics/gstreamer-plugins")
 * [Yocto build tool]("https://www.yoctoproject.org/")
 
-
 ## Materials and Tools used for the project
 
 1. Hardware materials
@@ -39,7 +38,7 @@ using the usb line to develop on Qualcomm® QCS610 SoC development board.
 
 Direct power supply for Qualcomm® QCS610 SoC development board
 
-![usb line](https://github.com/ThunderSoft-XA/C610-smartcashier-demo/tree/master/res/Charger.jpeg )
+![charger](https://github.com/ThunderSoft-XA/C610-smartcashier-demo/tree/master/res/Charger.jpeg )
 
 ## Install && Usage
 
