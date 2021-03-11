@@ -1,4 +1,4 @@
-# Qualcomm® QCS610 SoC Open Kit SmartCashierApp Developer documentation
+#  Open Kit SmartCashierApp Developer documentation
 
 ## brief introduction
 
@@ -6,6 +6,7 @@ This document mainly introduces the deployment and use of SmartCashierApp enviro
 
 * Background
 * Environment configuration
+*
 * Install && Usage
 
 ## Background
@@ -20,6 +21,25 @@ Requirements:
 * [Opencv 3.4.3]()
 * [GStreamer Plugins]("https://developer.qualcomm.com/qualcomm-robotics-rb5-kit/software-reference-manual/application-semantics/gstreamer-plugins")
 * [Yocto build tool]("https://www.yoctoproject.org/")
+
+
+## Materials and Tools used for the project
+
+1. Hardware materials
+
+Except for the development board,The following hardware materials are also needed:
+
+* Type-C usb line
+
+using the usb line to develop on Qualcomm® QCS610 SoC development board.
+
+![usb line](https://github.com/ThunderSoft-XA/C610-smartcashier-demo/tree/master/res/usb.png )
+
+* Charger
+
+Direct power supply for Qualcomm® QCS610 SoC development board
+
+![usb line](https://github.com/ThunderSoft-XA/C610-smartcashier-demo/tree/master/res/Charger.jpeg )
 
 ## Install && Usage
 
