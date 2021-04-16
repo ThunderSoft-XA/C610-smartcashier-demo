@@ -25,8 +25,8 @@ Requirements:
 3. Move the Neural Processing SDK contents to <C610-smartcashier-demo/SmartCashier/snpe/>
 
 * [Opencv 3.4.3](https://docs.opencv.org/3.4.3/d9/df8/tutorial_root.html)
-* [GStreamer Plugins]("https://developer.qualcomm.com/qualcomm-robotics-rb5-kit/software-reference-manual/application-semantics/gstreamer-plugins")
-* [Yocto build tool]("https://www.yoctoproject.org/")
+* [GStreamer Plugins](https://developer.qualcomm.com/qualcomm-robotics-rb5-kit/software-reference-manual/application-semantics/gstreamer-plugins)
+* [Yocto build tool](https://www.yoctoproject.org/)
 
 ## Materials and Tools used for the project
 
