@@ -18,7 +18,13 @@ Following the development of Embedded Machine,traditional Embedded Machine is di
 Requirements:
 
 * [Qualcomm Neural processing SDK for AI Setup]("https://developer.qualcomm.com/docs/snpe/setup.html")
-* [Opencv 3.4.3]()
+
+1. Download the Neural Processing SDK from here:
+   [https://developer.qualcomm.com/software/qualcomm-neural-processing-sdk](https://developer.qualcomm.com/software/qualcomm-neural-processing-sdk)
+2. Git clone this project link [https://github.com/ThunderSoft-XA/C610-smartcashier-demo/](https://github.com/ThunderSoft-XA/C610-smarttraffic-demo2.0/)
+3. Move the Neural Processing SDK contents to <C610-smarttraffic-demo/snpe/>
+
+* [Opencv 3.4.3](https://docs.opencv.org/3.4.3/d9/df8/tutorial_root.html)
 * [GStreamer Plugins]("https://developer.qualcomm.com/qualcomm-robotics-rb5-kit/software-reference-manual/application-semantics/gstreamer-plugins")
 * [Yocto build tool]("https://www.yoctoproject.org/")
 
@@ -32,13 +38,13 @@ Except for the development board,The following hardware materials are also neede
 
 using the usb line to develop on Qualcomm® QCS610 SoC development board.
 
-![usb line](https://github.com/ThunderSoft-XA/C610-smartcashier-demo/tree/master/res/usb.png )
+![usb line](./res/usb.png )
 
 * Charger
 
 Direct power supply for Qualcomm® QCS610 SoC development board
 
-![charger](https://github.com/ThunderSoft-XA/C610-smartcashier-demo/tree/master/res/Charger.jpeg )
+![charger](./res/charger.jpg )
 
 ## Install && Usage
 

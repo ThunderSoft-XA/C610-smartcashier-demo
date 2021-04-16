@@ -109,7 +109,8 @@ target_link_libraries(
         # Specifies the target library.
         ${PROJECT_NAME}
         ${GSTREAMER_LIBS}
-        # snpe
+        # 
+
         ${CMAKE_CURRENT_SOURCE_DIR}/lib/libSNPE.so
         # opencv
         ${OpenCV_LIBS}
