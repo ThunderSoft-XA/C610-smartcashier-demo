@@ -22,7 +22,7 @@ Requirements:
 1. Download the Neural Processing SDK from here:
    [https://developer.qualcomm.com/software/qualcomm-neural-processing-sdk](https://developer.qualcomm.com/software/qualcomm-neural-processing-sdk)
 2. Git clone this project link [https://github.com/ThunderSoft-XA/C610-smartcashier-demo/](https://github.com/ThunderSoft-XA/C610-smarttraffic-demo2.0/)
-3. Move the Neural Processing SDK contents to <C610-smarttraffic-demo/snpe/>
+3. Move the Neural Processing SDK contents to <C610-smartcashier-demo/SmartCashier/snpe/>
 
 * [Opencv 3.4.3](https://docs.opencv.org/3.4.3/d9/df8/tutorial_root.html)
 * [GStreamer Plugins]("https://developer.qualcomm.com/qualcomm-robotics-rb5-kit/software-reference-manual/application-semantics/gstreamer-plugins")
