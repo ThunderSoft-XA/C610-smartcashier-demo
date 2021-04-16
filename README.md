@@ -1,4 +1,4 @@
-# Open Kit SmartCashierApp Developer documentation
+# Qualcomm® QCS610 SoC Open Kit SmartCashier Developer documentation
 
 ## brief introduction
 
@@ -6,7 +6,7 @@ This document mainly introduces the deployment and use of SmartCashierApp enviro
 
 * Background
 * Environment configuration
-*
+* Materials and Tools used for the project
 * Install && Usage
 
 ## Background
